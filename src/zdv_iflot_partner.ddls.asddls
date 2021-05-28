@@ -12,5 +12,5 @@ key ihpa.objnr as OBJECT_NO,
 key ihpa.parvw as PARTN_ROLE,
 ihpa.parnr as partner_no,
 iloa.bukrs as comp_code,
-left(ihpa.parnr, 10 ) as vendor
+cast(CONCAT(ihpa.parnr, '') as lifnr ) as vendor
 }
